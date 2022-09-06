@@ -18,7 +18,14 @@ const config = {
     host: "localhost",
   },
   plugins: [
-    new HtmlWebpackPlugin([]),
+    new HtmlWebpackPlugin({
+      template:'./src/index.html',
+      title:'To do list',
+      filename:'index.html',
+      inject:'head',
+
+
+    }),
 
     new MiniCssExtractPlugin(),
 
